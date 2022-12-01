@@ -16,8 +16,16 @@
 
 #pragma once
 
-#define BOOTMAGIC_ENABLE = yes
-#define BOOTMAGIC_KEY_SALT KC_V
-#define BOOTMAGIC_KEY_EEPROM_CLEAR KC_Q
+#define BOOTMAGIC_ENABLE = no
 #define NO_MUSIC_MODE
-#define AUDIO_CLICKY
+
+// Following it so save space
+#define NO_ACTION_MACRO // to save space
+#define NO_ACTION_FUNCTION
+#define DISABLE_LEADER
+#ifndef NO_DEBUG
+#define NO_DEBUG
+#endif // !NO_DEBUG
+#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
+#define NO_PRINT
+#endif // !NO_PRINT
