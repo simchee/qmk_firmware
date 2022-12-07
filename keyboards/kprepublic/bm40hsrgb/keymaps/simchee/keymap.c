@@ -29,9 +29,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[QWERTZ] = LAYOUT_planck_mit
 	(
 	 KC_TAB,		KC_Q,				KC_W,				KC_E,				KC_R,				KC_T,				KC_Z,				KC_U,				KC_I,				KC_O,				KC_P,				KC_SLSH,
-	 MO(LOWER),	KC_A,				KC_S,				KC_D,				KC_F,				KC_G,				KC_H,				KC_J,				KC_K,				KC_L,				KC_SCLN,		KC_QUOT,
+	 MO(NUMPAD),KC_A,				KC_S,				KC_D,				KC_F,				KC_G,				KC_H,				KC_J,				KC_K,				KC_L,				KC_SCLN,		KC_QUOT,
 	 KC_LSFT,		KC_Y,				KC_X,				KC_C,				KC_V,				KC_B,				KC_N,				KC_M,				KC_COMM,		KC_DOT,			KC_UP,			KC_EQL,
-	 KC_ESC,		KC_LGUI,		KC_LCTL,		KC_LALT,		LT(NUMPAD,KC_ENTER),	KC_SPC,				KC_BSPC,		MO(RAISE),	KC_LEFT,		KC_DOWN,		KC_RIGHT
+	 KC_ESC,		KC_LGUI,		KC_LCTL,		KC_LALT,		LT(LOWER,KC_ENTER),		KC_SPC,				KC_BSPC,		MO(RAISE),	KC_LEFT,		KC_DOWN,		KC_RIGHT
 	 ),
 
 	[LOWER] = LAYOUT_planck_mit
