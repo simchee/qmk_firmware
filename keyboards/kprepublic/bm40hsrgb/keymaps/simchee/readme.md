@@ -19,7 +19,7 @@ Changes from standard ANSI keyboard for better ergonomic: switch ctrl and GUI (W
   .-----------------------------------------------------------------------------------------------.
   |  Tab  |   Q   |   W   |   E   |   R   |   T   |   Z   |   U   |   I   |   O   |   P   |   /   |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |  Fn1  |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   ;   |   '   |
+  | Numpad|   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   ;   |   '   |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
   | LShift|   Y   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |  AUp  | =(+)  |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
@@ -29,17 +29,18 @@ Changes from standard ANSI keyboard for better ergonomic: switch ctrl and GUI (W
 
 ## Lower
 
-Lower layout is mainly for numpad on the right side with navigation keys for lazy left handed navigation. Left side of Lower also provides media and RGB control.
+Lower provides Vim-style navigation on the right side for when using the keyboard with both hands, as well as media control keys. 
+Other control keys are also included in this layer, including, scroll, caps lock, insert. Scroll lock is to activate compose key.
 
 ```
   .-----------------------------------------------------------------------------------------------.
-  |  TAB  |  PUp  |  Up   | PDow  | Home  |       |       |   7   |   8   |   9   |   /   | Bkspc |
+  |       |  Mute |  VUp  |   PP  |       |       |       |       |       |       |       |       |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |  Fn1  |  Left |  Down | Right |  End  |       |       |   4   |   5   |   6   |   *   |       |
+  | Numpad|  Prev |  VDo  |  Next |  Esc  |       | ALeft | ADown |  AUp  | ARight|  Caps |ScrLock|
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | Shift |  Mute |  VUp  |  VDo  |  PP   |  Prev | Next  |   1   |   2   |   3   |   +   |   =   |
+  | LShift|       |       | Shift |  Ctrl |       |  Home | PDown |  PUp  |  End  |       | MRight|
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |  ESC  |  RGB  | LCtrl | LAlt  | Lower |     Enter     |   ,   |   0   |   .   |   -   |       |
+  |QC_MAKE|  RGB  |       |  Alt  | Lower |     Enter     |  Del  |       | Nrpad | PrScr |  Ins  |
   °-----------------------------------------------------------------------------------------------°
 ```
 
@@ -49,47 +50,54 @@ Raise is used for non-alphanumerical chars.
 
 ```
   .-----------------------------------------------------------------------------------------------.
-  |   ^   |   !   |   @   |       |   $   |   %   |       |   &   |   (   |    )  | `(~)  | /(|)  |
+  |   ^   |   !   |   @   |   $   |       |       |       |   &   |   (   |    )  | `(~)  | /(|)  |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
   |       |       |       |       |       |       |       |   *   |  [({) |  ](}) |       |   #   |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |       |       |       |       |       |       |       |   -   |   <   |   >   |       |       |
+  | Shift |       |       |       |       |       |       |   -   |   <   |   >   |   %   |       |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |       |       |       |       | Lower |     Space     | Raise | AltGr |       |       |       |
-  °-----------------------------------------------------------------------------------------------°
-```
-
-## Fn1
-
-Fn1 provides function keys, as well as Vim-style navigation on the right side for when using the keyboard with both hands. 
-Scroll lock is to activate compose key. 
-
-```
-  .-----------------------------------------------------------------------------------------------.
-  |       |       |  F7   |  F8   |  F9   |       |       |       |       |       |       |       |
-  |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |  Fn1  |  Esc  |  F4   |  F5   |  F6   |       | ALeft | ADown |  AUp  | ARight|  Caps |ScrLock|
-  |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | LShift|       |  F1   |  F2   |  F3   |       |  Home | PDown |  PUp  |  End  |       | MRight|
-  |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |QC_MAKE|       |  F10  |  F11  |  F12  |     Enter     |  Del  |       | Nrpad | PrScr |  Ins  |
+  |       |       |       |       |       |     Space     | BkSpc | Raise |       |       |       |
   °-----------------------------------------------------------------------------------------------°
 ```
 
 ### Compose Key
 
- * € :: equal -> E / L / C
- * § :: s -> o
- * ¢ :: bar -> c
- * x/y :: x -> y
- * © :: o -> c
- * ÷ :: : -> -
- * ä :: " -> a
- * ç :: , -> c
- * ğ :: b / ( -> g
- * ş :: , -> s
- * ü :: " -> u
- * ö :: " -> o
- * ø :: / -> o
- * ß :: s -> s
- * µ :: / -> u
+<table>
+	<tr>
+		<th>Char</th>
+		<th>First Key</th>
+		<th>Second Key</th>
+	</tr>
+	<tr> <td> € </td> <td> equal </td><td> E / L / C </td></tr>
+	<tr> <td> § </td> <td> s </td><td> o </td></tr>
+	<tr> <td> ¢ </td> <td> bar </td><td> c </td></tr>
+	<tr> <td> i/n </td> <td> i </td><td> n </td></tr>
+	<tr> <td> © </td> <td> o </td><td> c </td></tr>
+	<tr> <td> ÷ </td> <td> : </td><td> - </td></tr>
+	<tr> <td> ä </td> <td> " </td><td> a </td></tr>
+	<tr> <td> ç </td> <td> , </td><td> c </td></tr>
+	<tr> <td> ğ </td> <td> {b; (}</td><td> g </td></tr>
+	<tr> <td> ş </td> <td> , </td><td> s </td></tr>
+	<tr> <td> ü </td> <td> " </td><td> u </td></tr>
+	<tr> <td> ö </td> <td> " </td><td> o </td></tr>
+	<tr> <td> ø </td> <td> / </td><td> o </td></tr>
+	<tr> <td> ß </td> <td> s </td><td> s </td></tr>
+	<tr> <td> µ </td> <td> / </td><td> u </td></tr>
+</table>
+
+## Numpad
+
+Numpad also provides function keys. 
+
+```
+  .-----------------------------------------------------------------------------------------------.
+  |  TAB  |       |  F7   |  F8   |  F9   |       |       |   7   |   8   |   9   |   /   | Bkspc |
+  |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | Numpad|       |  F4   |  F5   |  F6   |       |       |   4   |   5   |   6   |   *   |   =   |
+  |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  | Shift |  Mute |  F1   |  F2   |  F3   |       |       |   1   |   2   |   3   |   +   | Enter |
+  |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+  |  ESC  |  RGB  |  F11  |  F11  |  F12  |     Space     |   ,   |   0   |   .   |   -   | Delete|
+  °-----------------------------------------------------------------------------------------------°
+```
+
