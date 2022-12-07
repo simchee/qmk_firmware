@@ -10,3 +10,4 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 AUDIO_ENABLE = no           # Audio output
 EXTRAFLAGS += -flto		# to save space
+
