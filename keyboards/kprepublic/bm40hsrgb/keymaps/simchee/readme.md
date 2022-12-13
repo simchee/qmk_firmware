@@ -34,13 +34,13 @@ Other control keys are also included in this layer, including, scroll, caps lock
 
 ```
   .-----------------------------------------------------------------------------------------------.
-  |       |  Mute |  VUp  |   PP  |       |       |       |       |       |       |       |       |
+  |  Tab  |  Mute |  VUp  |   PP  |       |       |       |       |       |       |       | Caps  |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | Numpad|  Prev |  VDo  |  Next |  Esc  |       | ALeft | ADown |  AUp  | ARight|  Caps |ScrLock|
+  | Numpad|  Prev |  VDo  |  Next |  Esc  |       | ALeft | ADown |  AUp  | ARight|       |ScrLock|
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | LShift|       |       | Shift |  Ctrl |       |  Home | PDown |  PUp  |  End  |       | MRight|
+  |       |  GUI  | Shift |  Alt  |  Ctrl |       |  Home | PDown |  PUp  |  End  |       | MRight|
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |QC_MAKE|  RGB  |       |  Alt  | Lower |     Enter     |  Del  |       | Nrpad | PrScr |  Ins  |
+  |QC_MAKE|  RGB  |       |       | Lower |     Enter     |  Del  |       | Nrpad | PrScr |  Ins  |
   °-----------------------------------------------------------------------------------------------°
 ```
 
@@ -87,17 +87,17 @@ Raise is used for non-alphanumerical chars.
 
 ## Numpad
 
-Numpad also provides function keys. 
+Numpad also provides function keys. Lower key toggles instead of switching momentarily. 
 
 ```
   .-----------------------------------------------------------------------------------------------.
-  |  TAB  |       |  F7   |  F8   |  F9   |       |       |   7   |   8   |   9   |   /   | Bkspc |
+  |  TAB  |  F7   |  F8   |  F9   |       |       |       |   7   |   8   |   9   |   /   | Bkspc |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | Numpad|       |  F4   |  F5   |  F6   |       |       |   4   |   5   |   6   |   *   |   =   |
+  | Numpad|  F4   |  F5   |  F6   |       |       |       |   4   |   5   |   6   |   *   |   =   |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  | Shift |  Mute |  F1   |  F2   |  F3   |       |       |   1   |   2   |   3   |   +   | Enter |
+  | Shift |  F1   |  F2   |  F3   |       |       |       |   1   |   2   |   3   |   +   | Enter |
   |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-  |  ESC  |  RGB  |  F11  |  F11  |  F12  |     Space     |   ,   |   0   |   .   |   -   | Delete|
+  |  ESC  |  F11  |  F11  |  F12  |TG(LOW)|   Space       |   ,   |   0   |   .   |   -   | Delete|
   °-----------------------------------------------------------------------------------------------°
 ```
 

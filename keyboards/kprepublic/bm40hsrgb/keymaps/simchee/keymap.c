@@ -36,10 +36,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[LOWER] = LAYOUT_planck_mit
 	(
-	 _______,		KC_MUTE,		KC_VOLU,		KC_MPLY,		_______,		_______,		_______,		_______,		_______,		_______,		_______,		_______,
-	 MO(NUMPAD),KC_MPRV,		KC_VOLD,		KC_MNXT,		KC_ESC,			_______,		KC_LEFT,		KC_DOWN,		KC_UP,			KC_RIGHT,		KC_CAPS,		KC_SCRL,
-	 _______,		_______,		_______,		KC_LSFT,		KC_LCTL,		_______,		KC_HOME,		KC_PGDN,		KC_PGUP,		KC_END,			_______,		KC_APP,
-	 QK_BOOT,		RGB_TOG,		_______,		KC_LALT,		MO(LOWER),				KC_ENTER,					KC_DEL,			_______,		KC_NUM,			KC_PSCR,		KC_INS
+	 KC_TAB,		KC_MUTE,		KC_VOLU,		KC_MPLY,		_______,		_______,		_______,		_______,		_______,		_______,		KC_CAPS,		KC_BSPC,
+	 MO(NUMPAD),KC_MPRV,		KC_VOLD,		KC_MNXT,		KC_ESC,			_______,		KC_LEFT,		KC_DOWN,		KC_UP,			KC_RIGHT,		_______,		KC_SCRL,
+	 _______,		KC_LGUI,		KC_LALT,		KC_LSFT,		KC_LCTL,		_______,		KC_HOME,		KC_PGDN,		KC_PGUP,		KC_END,			_______,		KC_APP,
+	 QK_BOOT,		RGB_TOG,		_______,		_______,		MO(LOWER),				KC_SPC,						KC_DEL,			_______,		KC_NUM,			KC_PSCR,		KC_INS
 	 ),
 	
 	[RAISE] = LAYOUT_planck_mit
@@ -52,11 +52,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	
 	[NUMPAD] = LAYOUT_planck_mit
 	(
-	 KC_TAB,		_______,		KC_F7,			KC_F8,			KC_F9,			_______,		_______,		KC_7,				KC_8,				KC_9,				KC_PSLS,		KC_BSPC,
-	 MO(NUMPAD),_______,		KC_F4,			KC_F5,			KC_F6,			_______,		_______,		KC_4,				KC_5,				KC_6,				KC_PAST,		KC_PEQL,
-	 KC_LSFT,		_______,		KC_F1,			KC_F2,			KC_F3,			_______,		_______,		KC_1,				KC_2,				KC_3,				KC_PPLS,		KC_ENTER,
-	 KC_ESC,		_______,		KC_F10,			KC_F11,			KC_F12,						KC_SPC,						KC_COMM,		KC_0,				KC_DOT,			KC_PMNS,		KC_DEL
+	 KC_TAB,		KC_F7,			KC_F8,			KC_F9,			_______,		_______,		_______,		KC_7,				KC_8,				KC_9,				KC_PSLS,		KC_BSPC,
+	 MO(NUMPAD),KC_F4,			KC_F5,			KC_F6,			_______,		_______,		_______,		KC_4,				KC_5,				KC_6,				KC_PAST,		KC_PEQL,
+	 KC_LSFT,		KC_F1,			KC_F2,			KC_F3,			_______,		_______,		_______,		KC_1,				KC_2,				KC_3,				KC_PPLS,		KC_ENTER,
+	 KC_ESC,		KC_F10,			KC_F11,			KC_F12,			TG(LOWER),				KC_SPC,						KC_COMM,		KC_0,				KC_DOT,			KC_PMNS,		KC_DEL
 	 )
 
+
+	
 };
 
